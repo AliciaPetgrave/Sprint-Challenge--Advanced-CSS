@@ -1,1 +1,21 @@
 // Mixins Here
+.mainfontsize(){
+    font-size:1.6rem;
+}
+
+.mainfontcolor(){
+    color:@ebony-clay;
+}
+
+
+//button mixin
+.buttonstyle(@fs, @border){
+    color:@porcelain;
+    font-size:@fs;
+    border:1px solid black;
+    text-align: center;
+    background: @btn-bg-color;
+    border-radius:@border;
+    width:30%;
+    padding: 2% 4%;
+}
