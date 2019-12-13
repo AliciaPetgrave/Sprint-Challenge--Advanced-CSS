@@ -14,6 +14,11 @@
 
     img{
       border-radius:10px;
+      width:100%;
+
+      @media @phone{
+        width:100%;
+      }
     }//closes image
   
   }
@@ -28,6 +33,24 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+    
+    .sky{
+      @media @phone{
+        display:none;
+      }
+    }
+
+    .launch{
+      @media @phone{
+        display:none;
+      }
+    }
+
+    .blast{
+      @media @phone{
+        width:100%;
+      }
     }
   }
 
@@ -67,8 +90,18 @@
           background:@porcelain;
           color:@btn-bg-color;
         }
+
+        @media @phone{
+          width:100%;
+          padding:6%;
+        }
       }
-    }
+
+      @media @phone{
+        width:100%;
+        padding-top:4%;
+      }//changes text
+    }//closes .walk-text
 
     .walk-img {
       width: 46%;
@@ -79,6 +112,17 @@
         height: auto;
         border-radius: 10px;
       }
+      
+      @media @phone{
+        width:100%;
+        margin:0 auto;
+      }
+    }
+
+    @media @phone{
+      flex-direction: column-reverse;
+      margin:0 auto;
+      padding:4%;
     }
   }
 }// home
